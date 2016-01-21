@@ -1,0 +1,16 @@
+﻿<Window x:Class="CaptainsLog.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaptainsLog"
+        mc:Ignorable="d"
+        Title="Captain's Log" Height="350" Width="525">
+    <Grid>
+        <DataGrid x:Name="gridLogEntries" Margin="10,65,10.4,9.8" SelectionMode="Extended" SelectionUnit="FullRow" SelectionChanged="gridLogEntries_SelectionChanged"/>
+        <Button x:Name="newEntry" Content="New Entry"   HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="168" Height="50" Click="newEntry_Click"/>
+        <Button x:Name="saveEntry" Content="Save Entry" Margin="183,10,0,0" VerticalAlignment="Top" Height="50" Click="saveEntry_Click" HorizontalAlignment="Left" Width="163"/>
+        <Button x:Name="deleteEntry" Content="Delete Entry" Margin="351,10,0,0" VerticalAlignment="Top" Height="50" Click="deleteEntry_Click" HorizontalAlignment="Left" Width="157"/>
+
+    </Grid>
+</Window>
